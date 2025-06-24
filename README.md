@@ -25,6 +25,12 @@ This web page mimics a typical login interface with:
 
 ---
 
+## 📸 Preview
+
+[Login Page Preview](https://loginpage0405.netlify.app/)
+
+---
+
 ## 🎯 Key Features
 
 - 📱 **Responsive Design** – Fully optimized for desktop and mobile screens
