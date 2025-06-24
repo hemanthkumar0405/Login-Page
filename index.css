@@ -1,0 +1,320 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+#header{
+    height: 75px;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: 1px solid#333;
+}
+#navbar {
+    height: inherit;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+#logo img {
+    height: 60px;
+    width: 220px;
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+#signin {
+    background-color: #0b6a8c;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+#signin:hover{
+    cursor: pointer;
+    background-color: #2a90b5;
+
+}
+
+/* Form Container */
+#form{
+    width: 100%;
+    background-color: #fff;
+    padding-top: 30px;
+}
+.form-container {
+    border: 1px solid;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    border-radius: 6px;
+    padding-top: 20px;
+}
+.form-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    margin-bottom: 30px;
+}
+.form-title::before,
+.form-title::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 38%;
+    top: 50%;
+    background: #ccc;
+}
+.form-title::before {
+    left: 30px;
+}
+.form-title::after {
+    right: 30px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 32px;
+}
+.form-group input {
+    width: 90%;
+    margin-left: 32px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#email{
+    font-size: 15px;
+    font-family: "Open Sans", Verdana, Geneva, sans-serif, sans-serif;
+}
+#password{
+    font-size: 15px;
+    font-family: "Open Sans", Verdana, Geneva, sans-serif, sans-serif;
+}
+.form-hint {
+    font-size: 13px;
+    color: #888;
+    margin-top: 3px;
+    margin-left: 32px;
+}
+.form-link {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    margin-top: -16px;
+    margin-left: 32px;
+    margin-bottom: 15px;
+    color: #0b6a8c;
+    text-decoration: none;
+}
+.checkbox-group {
+    margin-bottom: 20px;
+    font-size: 17px;
+    margin-left: 32px;
+    font-weight: 350;
+}
+.form-button {
+    background-color: #0b6a8c;
+    color: white;
+    width: 90%;
+    margin-left: 32px;
+    padding: 14px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.form-button:hover{
+    cursor: pointer;
+    background-color: #1986ad;
+}
+.or {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+.or::before,
+.or::after {
+    content: "";
+    position: absolute;
+    width: 32%;
+    height: 1px;
+    background: #ccc;
+    top: 50%;
+}
+.or::before {
+    left: 30px;
+}
+.or::after {
+    right: 30px;
+}
+.google-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 240px;
+    margin-top: 15px;
+    background: white;
+    color: rgb(225, 104, 104);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20%;
+    height: 38px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.google-btn:hover{
+    background-color: rgb(196, 66, 66);
+    color: #fff;
+}
+.google-btn img {
+    width: 45px;
+    height: 30px;
+}
+
+/* create account */
+#account{
+    background-color: #fff;
+}
+.create-account {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 18px;
+}
+.create-account a {
+    display: inline-block;
+    margin-top: 10px;
+    border: 1px solid #0b6a8c;
+    padding: 10px 220px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    color: #0b6a8c;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.create-account a:hover {
+    background: #0f475c;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  #logo img {
+    height: 40px;
+    width: 160px;
+    margin-bottom: 15px;
+  }
+
+  #signin {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-bottom: 15px;
+  }
+
+  .form-container {
+    max-width: 90%;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .form-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .form-title::before,
+  .form-title::after {
+    width: 25%;
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-hint,
+  .form-link,
+  .checkbox-group,
+  .form-button {
+    margin-left: 20px;
+    width: 90%;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .form-hint,
+  .form-link {
+    font-size: 12px;
+  }
+
+  .checkbox-group {
+    font-size: 15px;
+  }
+
+  .form-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .or {
+    font-size: 16px;
+  }
+
+  .or::before,
+  .or::after {
+    width: 20%;
+  }
+
+  .google-btn {
+    margin: 15px auto;
+    width: 70%;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .google-btn img {
+    width: 30px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  .create-account {
+    font-size: 16px;
+  }
+
+  .create-account a {
+    padding: 10px 30px;
+    font-size: 15px;
+    width: 80%;
+    display: inline-block;
+  }
+}
